@@ -8,6 +8,9 @@
 
 #import "CollevtionViewController.h"
 #import "TopScrollerView.h"
+
+#import "TwoLinkageView.h"
+#import "LeftTableViewController.h"
 #define SCREEN_WIDTH    ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 // 获取RGB颜色
@@ -26,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+   
     self.view.backgroundColor = [UIColor whiteColor];
     //滑动效果 点击的view
     self.topScrollViews = [TopScrollerView instanceViewWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) titleArr:@[@"tableview1",@"tableview2",@"tableview3"] selectColor:[UIColor whiteColor] unSelectColor:[UIColor lightGrayColor] selectFont:[UIFont systemFontOfSize:16] unSelectFont:[UIFont systemFontOfSize:14]];
@@ -93,7 +96,15 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (tableView == tabview3) {
+        LeftTableViewController *vc = [[LeftTableViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        TwoLinkageView *vc =[[TwoLinkageView alloc]init];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
 }
 - (NSString *)title{
     return @"测试滑动";

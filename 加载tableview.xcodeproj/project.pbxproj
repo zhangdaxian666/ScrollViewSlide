@@ -19,6 +19,10 @@
 		5534A4FC1FF4BAEB00FF4F42 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5534A4FA1FF4BAEB00FF4F42 /* TableViewCell.m */; };
 		5534A4FD1FF4BAEB00FF4F42 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5534A4FB1FF4BAEB00FF4F42 /* TableViewCell.xib */; };
 		5534A5001FF4D5AC00FF4F42 /* FFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5534A4FF1FF4D5AC00FF4F42 /* FFViewController.m */; };
+		5545A66D2008A605001C5FA0 /* TwoLinkageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5545A66C2008A605001C5FA0 /* TwoLinkageView.m */; };
+		5545A6712008AD65001C5FA0 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5545A6702008AD65001C5FA0 /* LeftTableViewController.m */; };
+		5545A6762008AD70001C5FA0 /* RightDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5545A6742008AD70001C5FA0 /* RightDetailViewController.m */; };
+		5545A6772008AD70001C5FA0 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5545A6752008AD70001C5FA0 /* RightViewController.m */; };
 		55899A2E2004A0C1001009E5 /* CollevtionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55899A2D2004A0C1001009E5 /* CollevtionViewController.m */; };
 		55DCCAE71FFCB726003E52C2 /* UITextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DCCAE61FFCB726003E52C2 /* UITextViewController.m */; };
 /* End PBXBuildFile section */
@@ -65,6 +69,14 @@
 		5534A4FB1FF4BAEB00FF4F42 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		5534A4FE1FF4D5AC00FF4F42 /* FFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFViewController.h; sourceTree = "<group>"; };
 		5534A4FF1FF4D5AC00FF4F42 /* FFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFViewController.m; sourceTree = "<group>"; };
+		5545A66B2008A605001C5FA0 /* TwoLinkageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoLinkageView.h; sourceTree = "<group>"; };
+		5545A66C2008A605001C5FA0 /* TwoLinkageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoLinkageView.m; sourceTree = "<group>"; };
+		5545A66F2008AD61001C5FA0 /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
+		5545A6702008AD65001C5FA0 /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
+		5545A6722008AD70001C5FA0 /* RightDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightDetailViewController.h; sourceTree = "<group>"; };
+		5545A6732008AD70001C5FA0 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		5545A6742008AD70001C5FA0 /* RightDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightDetailViewController.m; sourceTree = "<group>"; };
+		5545A6752008AD70001C5FA0 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
 		55899A2C2004A0C1001009E5 /* CollevtionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollevtionViewController.h; sourceTree = "<group>"; };
 		55899A2D2004A0C1001009E5 /* CollevtionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollevtionViewController.m; sourceTree = "<group>"; };
 		55DCCAE51FFCB726003E52C2 /* UITextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewController.h; sourceTree = "<group>"; };
@@ -126,6 +138,7 @@
 				552E19322007528F007C9DC9 /* TopScrollerView.h */,
 				552E19332007528F007C9DC9 /* TopScrollerView.m */,
 				552E1935200752B6007C9DC9 /* ScrollerViewType.h */,
+				5545A66E2008AD49001C5FA0 /* 联动 */,
 				55899A2B20049FDC001009E5 /* other */,
 				5534A4CD1FF4BAD800FF4F42 /* Main.storyboard */,
 				5534A4D01FF4BAD800FF4F42 /* Assets.xcassets */,
@@ -152,6 +165,21 @@
 				5534A4ED1FF4BAD800FF4F42 /* Info.plist */,
 			);
 			path = "加载tableviewUITests";
+			sourceTree = "<group>";
+		};
+		5545A66E2008AD49001C5FA0 /* 联动 */ = {
+			isa = PBXGroup;
+			children = (
+				5545A66B2008A605001C5FA0 /* TwoLinkageView.h */,
+				5545A66C2008A605001C5FA0 /* TwoLinkageView.m */,
+				5545A66F2008AD61001C5FA0 /* LeftTableViewController.h */,
+				5545A6702008AD65001C5FA0 /* LeftTableViewController.m */,
+				5545A6722008AD70001C5FA0 /* RightDetailViewController.h */,
+				5545A6742008AD70001C5FA0 /* RightDetailViewController.m */,
+				5545A6732008AD70001C5FA0 /* RightViewController.h */,
+				5545A6752008AD70001C5FA0 /* RightViewController.m */,
+			);
+			path = "联动";
 			sourceTree = "<group>";
 		};
 		55899A2B20049FDC001009E5 /* other */ = {
@@ -305,10 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5534A4CC1FF4BAD800FF4F42 /* ViewController.m in Sources */,
+				5545A66D2008A605001C5FA0 /* TwoLinkageView.m in Sources */,
 				552E19342007528F007C9DC9 /* TopScrollerView.m in Sources */,
 				5534A4FC1FF4BAEB00FF4F42 /* TableViewCell.m in Sources */,
 				55899A2E2004A0C1001009E5 /* CollevtionViewController.m in Sources */,
+				5545A6772008AD70001C5FA0 /* RightViewController.m in Sources */,
 				55DCCAE71FFCB726003E52C2 /* UITextViewController.m in Sources */,
+				5545A6712008AD65001C5FA0 /* LeftTableViewController.m in Sources */,
+				5545A6762008AD70001C5FA0 /* RightDetailViewController.m in Sources */,
 				5534A4D71FF4BAD800FF4F42 /* main.m in Sources */,
 				5534A4C91FF4BAD800FF4F42 /* AppDelegate.m in Sources */,
 				5534A5001FF4D5AC00FF4F42 /* FFViewController.m in Sources */,
